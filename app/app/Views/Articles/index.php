@@ -5,10 +5,14 @@
 <?= $this->section('content') ?>
 <h1>Articles</h1>
 
+<a href="<?= url_to('Articles::new') ?>">Create New Article</a>
 
 <ul>
-    <?php foreach ($tables as $table): ?>
-        <li><?= esc($table) ?></li>
+    <?php foreach ($articles as $article): ?>
+        <li>
+            <h1><a href="<?= site_url('articles/' . $article['id']) ?>"><?= esc($article['title']) ?></a></h1>
+            <p><?= esc($article['content']) ?></p>
+        </li>
     <?php endforeach; ?>
 </ul>
 <?= $this->endSection() ?>

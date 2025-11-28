@@ -22,6 +22,8 @@ composer.lock
 !/app/writable/session/index.html
 /app/writable/uploads/*
 !/app/writable/uploads/index.html
+/app/writable/debugbar/*
+!/app/writable/debugbar/index.html
 
 # Ignore environment files
 /app/.env
